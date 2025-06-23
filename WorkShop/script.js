@@ -20,13 +20,13 @@ function handleSubmit(event){
 
     let student_details=window.localStorage.getItem("student")
     student_details=JSON.parse(student_details)
-    student_details.forEach((v,i,a)=>{
-        if(std_name==v.name){
+    // student_details.forEach((v,i,a)=>{
+    //     if(std_name==v.name){
 
-            alert("user already exists")
+    //         alert("user already exists")
             
-        }
-    })
+    //     }
+    // })
 
     
     let s_name=document.createElement("p")
