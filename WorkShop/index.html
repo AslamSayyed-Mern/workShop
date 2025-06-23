@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .form-container{
+            text-align: center;
+            border: 1px solid;
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            padding: 40px;
+            background:linear-gradient(to bottom,lightblue,lightyellow);
+        }
+        form>input{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 400px;
+        }
+        form button{
+            padding: 8px;
+            border: 1px solid blueviolet;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(119, 25, 207);
+        }
+        /* .student_details{
+            text-align: center;
+            border: 1px solid;
+            padding: 40px;
+            background:linear-gradient(to bottom,lightblue,lightyellow);
+        } */
+    </style>
+</head>
+<body>
+    
+
+    <div class="form-container">
+
+        <h1>STUDENT FORM</h1>
+        <P style="margin: 10px;">Fill the details below</P>
+        <form action="">
+            <label for="name">NAME</label><br>
+            <input type="text" name="" id="name" placeholder="enter name" required><br>
+            <label for="email">EMAIL</label><br>
+            <input type="email" name="" id="email" placeholder="eg:abc@gmail.com" required><br>
+            <label for="age">AGE</label><br>
+            <input type="number" name="" id="age" placeholder="age"><br>
+            <label for="phoneno">PHONE NO</label><br>
+            <input type="number" name="" id="phoneno" placeholder="+91 999999999"><br>
+            <label for="address">ADDRESS</label><br>
+            <input type="text" name="" id="address" placeholder="address"><br>
+            <button onclick=handleSubmit(event)>ADD DETAILS</button>
+        </form>
+    </div>
+    <div class="student_details">
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
